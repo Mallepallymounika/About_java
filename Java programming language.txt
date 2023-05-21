@@ -1,0 +1,333 @@
+Java programming language:
+
+   1)Java is a high-level, class-based, object-oriented programming language that is designed to have as few       implementation dependencies as possible.
+ 2)It is a general-purpose programming language intended to let programmers write once, run anywhere (WORA),meaning that compiled Java code can run on all platforms that support Java without the need to recompile.
+3)Java was originally developed by James Gosling at Sun Microsystems. It was released in May 1995 as a core component of Sun Microsystems' Java platform.
+4)In java compiler converts source code to java byte code,interpreter converts byte code to machine understandable code.
+ MAIN COMPONENTS JAVA:
+ JRE(java run time environment)
+ JDK(java development kit)
+ JVM(java virtual machine)
+
+  JDK: Is a software development kit required to develop application in java.
+  JRE:Is a software package that provides java class libraries,jvm,other components that are required to run java applications.
+  JVM:That take byte code and covert machine code.
+     JDK contains JRE ,compiler,debuggers..
+     JRE contains JVM, class libraries..
+
+JIT(just in time) compiler: JIT improve the performance of the code at run time and JIT compiler identifies the hotsport that is most frequently executed part of code.
+   
+   ANOTOMY OF JAVA
+  
+ 1) Documentation section
+ 2)Package section
+ 3)Import section
+ 4)Interface section
+ 5)Class definition
+ 6)main method class
+  {
+   main method definition
+  }
+ 
+1) Save
+  MyFirstApp.java
+2) Compiler
+  javac MyFirstApp.java
+3) Run
+  java MyFirstApp
+
+   JAVA BUZZWORDS
+
+  1)Object oriented
+  2)Simple
+  3)Secure
+  4)Robust
+  5)Platform independent
+  6)Portable
+  7)dynamic
+  8)Architectural neutral
+  9)Interpreted
+  10)High performance
+  11)Distributed
+  12) Multithreaded
+  
+ TOKENS
+ 
+Tokens are smallest individual units of program, that are recognized by the compiler.
+Java token includes the following:
+1)Keywords
+2)Identifiers
+3)Literals
+4)Operators
+6)Special symbols
+
+KEYWORDS: These are the pre-defined reserved words of any programming language. Each keyword has a special meaning. It is always written in lower case.
+
+IDENTIFIERS: Identifiers are used to name a variable, constant, function, class, and array. It usually defined by the user.
+
+Rules:
+Identifiers can have alphabets, digits, underscore and dollar symbol.
+They must not start with digit
+Keys words are not used as an identifiers.
+Whitespace character are also not allowed.
+
+LITERALS: In programming literal is a notation that represents a fixed value (constant) in the source code.
+
+OPERATORES: In programming, operators are the special symbol that tells the compiler to perform a special operation. 
+  
+ Arthmentic Operator --> +,-,/,*,%
+ Unary Operator      -->++,--,!
+ Assignment Operator -->=,+=,-=,*=,/=,%=,^=
+ Relational Operator -->==,!=,<,>,<=,>=
+ Logical Operator    -->&&,||
+ Ternary Operator    -->(condition)?(Statement):(statement2);
+ Bitwise Operator    -->&,|,^,~
+ shift Operator      --> <<,>>,>>>
+     
+SPECIAL SYMBOLS: The separators in Java is also known as punctuators. There are nine separators in Java, are as follows:
+
+Square Brackets []
+Parentheses()
+Curly Braces {}
+Comma (,)
+Assignment Operator (=)
+Semicolon (;)
+Period (.)
+    
+
+ NAMING CONVENTIONS
+
+  1) Package name should be written in small letters.
+  2)Interface name should be written in capital letters.
+     ex: String, DataInputString, ActionListener  .
+  3)First word of the variable and method name should be          small letters and second word letter should be capital.
+        ex: readLine(); , nextLine();
+  4)All constants should be capital letters.
+  5)All keywords should be small letters.
+
+
+  DATA TYPES
+
+   There are three types of data types :
+  1)Primitive data type
+     a)numeric b) non-numeric
+  2)Non-Primitive data type
+
+   Primitive data type:
+  
+Primitive data type are predefined data types in java.
+a)numeric
+byte  (-2^7)to (2^7 -1)     size-1byte 
+short (-2^15)to (2^15 -1)   size-2byte 
+int   (-2^31)to (2^31 -1)   size-4byte 
+long  (-2^63)to (2^63 -1)   size-8byte 
+float   unlimited           size-4byte 
+double  unlimited           size-8byte 
+b)non-numberic
+boolean-true,false
+char-simple characters       size-2byte 
+
+  Non-Primitive data type
+   they are created my programmers ,they are
+Strings
+Arrays
+
+
+
+
+   TYPE CASTING
+
+->Type casting is a method or process that converts a data type into another data type in both ways manually and automatically. The automatic conversion is done by the compiler and manual conversion performed by the programmer. 
+   There are two types of type casting:
+
+1)Widening Type Casting(implicit conversion)
+ It is done automatically. It is safe because there is no chance to lose data.
+this convertion is done as follows
+ byte->short->char->int->long->float->doubles
+
+2)Narrowing Type Casting(explicit conversion)
+   It is done manually by the programmer. If we do not perform casting then the compiler reports a compile-time error.
+this convertion is done as follows
+double->float->long->int->char->short->byte
+
+   VARIABLES
+
+A variable is the name of a reserved area allocated in memory. In other words, it is a name of the memory location. It is a combination of "vary + able" which means its value can be changed.
+      Ex: int X,Y;    Declaration of variables
+
+   CONTROL STATEMENTS:
+1)Condition statements
+2)Iterative statements
+  
+  CONDITIONAL STATEMENTS
+1) Simple if statement
+if statement to specify a block of Java code to be executed if a condition is true.
+syntax;
+   if (condition) {
+  //block of code
+}
+   
+2) else statement
+
+Use the else statement to specify a block of code to be executed if the condition is false.
+
+Syntax:
+
+if (condition) {
+  // block of code to be executed if the condition is true
+} else {
+  // block of code to be executed if the condition is false
+}
+
+3)else is statement
+ else if statement to specify a new condition if the first condition is false.
+
+Syntax
+if (condition1) {
+  // block of code to be executed if condition1 is true
+} else if (condition2) {
+  // block of code to be executed if the condition1 is false and condition2 is true
+} else {
+  // block of code to be executed if the condition1 is false and condition2 is false
+}
+
+4)Nested if condition 
+Nested means within. Nested if condition means if-within-if. Nested if condition comes under decision-making statement in Java.
+syntax:
+
+if( condition ){
+
+      if( condition ){
+      
+                if( condition ){
+                
+                         ......
+                }
+       }
+}
+
+
+5) Switch Statements
+Instead of writing many if..else statements, you can use the switch statement.
+
+The switch statement selects one of many code blocks to be executed.
+
+syntax:
+
+switch(expression) {
+  case x:
+    // code block
+    break;
+  case y:
+    // code block
+    break;
+  default:
+    // code block
+}
+
+
+
+
+ ITERATIVE STATEMENTS
+
+   loops are used to execute a statement multiple times. Mainly there are four types of loops support by Java.
+for loop
+while loop
+do while loop
+
+for loop
+
+for loops in Java is used to iterate a statement multiple times. Mostly it’s used when we have a fixed number of iterations.
+Syntax 
+
+for (initialization ; condition; Increment/decrement)
+{
+statement block 1;
+}
+statement block x;
+
+while loop in Java
+
+while loop in java is another form of iteration statement in java. In simple words, Another way to iterate a statement multiple times. The only difference in the execution.
+syntax
+
+while(condition)
+{
+statement block 1;
+}
+statement block x;
+
+ do while loop
+
+in do while the statement should execute atleat once.
+ syntax;
+
+ do
+{
+statement block1;
+statement block2;
+}
+
+while(condition);
+ 
+statement x;
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+ 
+ 
+
+
+
+ 
+  
+
+
+
+
+
+
+   
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
